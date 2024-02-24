@@ -2,8 +2,20 @@
     box-sizing: border-box;
 }
 
+.stories>div>div:nth-child(1){
+    justify-content: unset !important;
+    flex-wrap: wrap !important;
+    padding: 3px 2px !important;
+    width: 100% !important;
+}
+
+.stories>div>div:nth-child(1)> div{
+    min-width: 4px;
+    margin: 1.5px 1px !important;
+}
 
 .stories-modal{
+    font-family: 'Open Sans',sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -88,7 +100,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     z-index: 2;
     text-align: center;
     font-weight: 600;
@@ -97,7 +109,7 @@
 
 .story-card__text._top{
     bottom: unset;
-    top: 0;
+    top: 40px;
 }
 
 .story-card__text._center{
@@ -116,18 +128,18 @@
     position: relative;
     line-height: 142%;
     padding: 0.03125em 0.25em;
-    font-size: 25px;
+    font-size: 22px;
     -webkit-box-decoration-break: clone;
     border-radius: .125em;
     white-space: break-lines;
 }
 
 .story-card__text ._flags{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .story-card__text._small .text{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .story-card__text ._flags span{
