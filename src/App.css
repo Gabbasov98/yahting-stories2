@@ -2,11 +2,21 @@
     box-sizing: border-box;
 }
 
+.stories>div{
+    max-width: 100%;
+    max-height: calc(100 * var(--vh) - 40px);
+}
+
 .stories>div>div:nth-child(1){
     justify-content: unset !important;
     flex-wrap: wrap !important;
     padding: 3px 2px !important;
     width: 100% !important;
+}
+
+.stories>div>div:nth-child(2){
+    max-width: 100%;
+    max-height: calc(100 * var(--vh) - 50px);
 }
 
 .stories>div>div:nth-child(1)> div{
@@ -73,7 +83,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
   width: 360px;
-  max-width: calc(100% - 90px);
+  max-width: 100%;
   max-height: calc(100 * var(--vh) - 50px);
 }
 
